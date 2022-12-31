@@ -24,8 +24,8 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        emailView.layer.cornerRadius = 6
-        passwordView.layer.cornerRadius = 6
+        emailView.layer.cornerRadius = emailView.frame.size.height / 10
+        passwordView.layer.cornerRadius = passwordView.frame.size.height / 10
     }
     
     

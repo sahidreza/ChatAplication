@@ -30,9 +30,9 @@ class RegisterViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        nameView.layer.cornerRadius = 6
-        emailIdView.layer.cornerRadius = 6
-        passwordView.layer.cornerRadius = 6
+        nameView.layer.cornerRadius = nameView.layer.frame.height / 10
+        emailIdView.layer.cornerRadius = emailIdView.layer.frame.height / 10
+        passwordView.layer.cornerRadius = passwordView.layer.frame.height / 10 
        
         
         // Do any additional setup after loading the view.
