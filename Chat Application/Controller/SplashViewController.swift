@@ -28,6 +28,9 @@ class SplashViewController: UIViewController {
             timeIncreaseing += 1
         }
         
+       
+     
+           
     }
     
     override func viewWillAppear(_ animated: Bool) {

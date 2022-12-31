@@ -19,6 +19,10 @@
 		D110B9A5295DEA4D002F75B5 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D110B9A4295DEA4D002F75B5 /* SplashViewController.swift */; };
 		D110B9A8295DEA4D002F75B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D110B9A6295DEA4D002F75B5 /* Main.storyboard */; };
 		D110B9AA295DEA50002F75B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D110B9A9295DEA50002F75B5 /* Assets.xcassets */; };
+		D15CCA8729601F3200AC083A /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D15CCA8629601F3200AC083A /* IQKeyboardManagerSwift */; };
+		D15CCA8E2960215500AC083A /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15CCA8C2960215500AC083A /* ChatTableViewCell.swift */; };
+		D15CCA8F2960215500AC083A /* ChatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D15CCA8D2960215500AC083A /* ChatTableViewCell.xib */; };
+		D15CCA912960261A00AC083A /* UserMessageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15CCA902960261A00AC083A /* UserMessageData.swift */; };
 		D19B20FC295EB58C008BD714 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19B20FB295EB58C008BD714 /* RegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +38,9 @@
 		D110B9A7295DEA4D002F75B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D110B9A9295DEA50002F75B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D110B9AE295DEA50002F75B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D15CCA8C2960215500AC083A /* ChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
+		D15CCA8D2960215500AC083A /* ChatTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatTableViewCell.xib; sourceTree = "<group>"; };
+		D15CCA902960261A00AC083A /* UserMessageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserMessageData.swift; sourceTree = "<group>"; };
 		D19B20FB295EB58C008BD714 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -43,6 +50,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D10BA3C6295ED9C300D9E3FD /* Toast in Frameworks */,
+				D15CCA8729601F3200AC083A /* IQKeyboardManagerSwift in Frameworks */,
 				D10BA3C1295ECAE500D9E3FD /* FirebaseAuth in Frameworks */,
 				D10BA3C3295ECAE600D9E3FD /* FirebaseFirestore in Frameworks */,
 			);
@@ -86,6 +94,7 @@
 		D110B9B4295DEAA5002F75B5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D15CCA902960261A00AC083A /* UserMessageData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -94,6 +103,8 @@
 			isa = PBXGroup;
 			children = (
 				D110B9A6295DEA4D002F75B5 /* Main.storyboard */,
+				D15CCA8C2960215500AC083A /* ChatTableViewCell.swift */,
+				D15CCA8D2960215500AC083A /* ChatTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -129,6 +140,7 @@
 				D10BA3C0295ECAE500D9E3FD /* FirebaseAuth */,
 				D10BA3C2295ECAE500D9E3FD /* FirebaseFirestore */,
 				D10BA3C5295ED9C300D9E3FD /* Toast */,
+				D15CCA8629601F3200AC083A /* IQKeyboardManagerSwift */,
 			);
 			productName = "Chat Application";
 			productReference = D110B99D295DEA4D002F75B5 /* Chat Application.app */;
@@ -161,6 +173,7 @@
 			packageReferences = (
 				D10BA3BF295ECAE500D9E3FD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				D10BA3C4295ED9C300D9E3FD /* XCRemoteSwiftPackageReference "Toast-Swift" */,
+				D15CCA8529601F3200AC083A /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
 			);
 			productRefGroup = D110B99E295DEA4D002F75B5 /* Products */;
 			projectDirPath = "";
@@ -177,6 +190,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D110B9AA295DEA50002F75B5 /* Assets.xcassets in Resources */,
+				D15CCA8F2960215500AC083A /* ChatTableViewCell.xib in Resources */,
 				D110B9A8295DEA4D002F75B5 /* Main.storyboard in Resources */,
 				D10BA3BE295ECA1200D9E3FD /* GoogleService-Info.plist in Resources */,
 			);
@@ -193,7 +207,9 @@
 				D110B9A5295DEA4D002F75B5 /* SplashViewController.swift in Sources */,
 				D110B9A1295DEA4D002F75B5 /* AppDelegate.swift in Sources */,
 				D110B9A3295DEA4D002F75B5 /* SceneDelegate.swift in Sources */,
+				D15CCA912960261A00AC083A /* UserMessageData.swift in Sources */,
 				D10BA3C8295EDCAA00D9E3FD /* K.swift in Sources */,
+				D15CCA8E2960215500AC083A /* ChatTableViewCell.swift in Sources */,
 				D10BA3BC295EC6C900D9E3FD /* ChatViewController.swift in Sources */,
 				D19B20FC295EB58C008BD714 /* RegisterViewController.swift in Sources */,
 			);
@@ -427,6 +443,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		D15CCA8529601F3200AC083A /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -444,6 +468,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = D10BA3C4295ED9C300D9E3FD /* XCRemoteSwiftPackageReference "Toast-Swift" */;
 			productName = Toast;
+		};
+		D15CCA8629601F3200AC083A /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D15CCA8529601F3200AC083A /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
